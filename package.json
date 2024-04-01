@@ -33,7 +33,7 @@
     "axios": "^1.6.5",
     "discord.js": "^14.14.1",
     "pino": "^8.17.2",
-    "pino-pretty": "^10.3.1",
+    "pino-pretty": "^11.0.0",
     "sodium": "^3.0.2",
     "wanakana": "^5.3.1"
   }
