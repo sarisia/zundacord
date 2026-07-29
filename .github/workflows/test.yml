@@ -15,11 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
 
-      - uses: actions/cache@e12d46a63a90f2fae62d114769bbf2a179198b5c
-        with:
-          path: .npm
-          key: ${{ runner.os }}-${{ hashFiles('package-lock.json') }}
-
       - uses: devcontainers/ci@3d462823359c481c587cb7426f39775f24257115
         with:
           push: never

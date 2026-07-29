@@ -44,6 +44,3 @@ RUN echo "node ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/node && \
 
 ARG WORKSPACE_DIR
 WORKDIR $WORKSPACE_DIR
-
-# expose npm cache to workspace to enable ci caching
-RUN sudo -u node npm config set cache=.npm
