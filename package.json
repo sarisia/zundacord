@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "node . | pino-pretty",
+    "slack-demo": "DOTENV_CONFIG_QUIET=true node lib/slackdemo/index.js | pino-pretty",
     "test": "jest",
     "build": "tsc",
     "prod": "npm ci && npm run build && npm prune --production",
@@ -30,8 +31,10 @@
     "@discordjs/opus": "^0.10.0",
     "@discordjs/rest": "^2.6.1",
     "@discordjs/voice": "^0.19.2",
+    "@slack/bolt": "^4.7.3",
     "axios": "^1.6.5",
     "discord.js": "^14.26.4",
+    "dotenv": "^17.4.2",
     "pino": "^8.17.2",
     "pino-pretty": "^10.3.1",
     "sodium": "^3.0.2",
